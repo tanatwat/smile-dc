@@ -1,0 +1,143 @@
+.body
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.social-wrapper
+  display: flex
+  flex-direction: column
+  text-align: center
+  font-size: 1.5rem
+  a
+    text-decoration: none
+    padding: 12px 0
+    &.line
+      color: #0dd24d !important
+    &.facebook
+      color: #2682d2 !important
+    &:hover, &:focus
+      text-decoration: underline
+    i::before
+      margin-right: 8px
+      font-size: 1.8rem
+
+.messenger-button
+  position: fixed
+  bottom: 50px
+  right: 70px
+  font-size: 1.2rem
+  text-decoration: none
+  background: #2895f7
+  padding: 10px 12px
+  color: #fff
+  border-radius: 5px
+  border: 1px solid transparent
+  transition: all .2s ease
+  z-index: 9999
+  &:hover
+    background: #fff
+    color: #0082f3
+    border-color: #0082f3
+
+#gmap_canvas
+  min-width: 100%
+  min-height: 500px
+  margin-bottom: 30px
+  padding: 10px
+
+.footer
+  flex-direction: column
+  color: #fff
+  .footer-content
+    text-align: center
+    font-size: 1rem
+  .social-links
+    display: flex
+    justify-content: center
+    padding-bottom: 30px
+    > *
+      padding: 8px
+      font-size: 1.8rem
+      color: #fff
+      text-decoration: none
+      transition: color .2s ease
+      &:hover
+        color: #99ffe6
+
+a.service-wrapper
+  text-decoration: none
+  transition: transform .2s ease
+  &:hover
+    transform: scale(1.1, 1.1)
+    > *
+      color: #50efca
+  > *
+    transition: color .2s ease
+
+.pricing-table
+  padding: 15px 0
+
+.pricing-list
+  padding: 10px 8px
+  border-bottom: 1px solid #ddd
+  &:first-child
+    border-top: 1px solid #ddd
+  p
+    margin: 10px 0
+    &.service
+      color: #3bb3aa
+      font-size: 1.2rem
+    &.price
+      color: #555
+      font-size: 1.4rem
+    &.price::after
+      content: ' บาท'
+
+.page-ul ul li
+  color: #555
+  font-size: 1.2rem
+  line-height: 1.8rem
+  padding: 3px 0
+
+.page-ul-title
+  color: #555
+
+.page-service-links
+  padding: 10px 0
+  a
+    display: block
+    text-decoration: none
+    font-size: 1.5rem
+    color: #00d6cb
+    margin: 8px 0
+    line-height: 1.8rem
+    transition: all .2s ease
+    &:first-child
+      margin-top: 0
+    &:hover, &:focus
+      color: #00f0e4
+      text-decoration: underline
+
+@media (max-width: 991px)
+  .messenger-button
+    font-size: 1rem
+    right: 20px
+    bottom: 20px
+
+@media (max-width: 479px)
+  .social-wrapper
+    font-size: 1.2rem
+  #gmap_canvas
+    min-height: 280px
+  .messenger-button
+    width: 50px
+    height: 50px
+    text-align: center
+    font-size: 2rem
+    border-radius: 50%
+    i
+      position: absolute
+      top: 9px
+      left: 10px
+    font
+      display: none
